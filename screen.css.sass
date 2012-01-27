@@ -1,0 +1,64 @@
+@import url("reset.css")
+
+body
+  text-align: center
+  margin: 0 auto
+  width: 960px
+
+a
+  color: black
+  &:hover
+    color: gray
+
+pre
+  margin-top: 5px
+
+h1
+  font-size: 25px
+
+details
+  font-size: 12px
+
+header
+  text-align: right
+  font-size: 15px
+  margin-bottom: 10px
+  padding-bottom: 10px
+
+$gap_margin: 20px
+
+.gap
+  margin-top: $gap_margin
+  margin-bottom: $gap_margin
+
+  &.double
+    margin-top: 2 * $gap_margin
+    margin-bottom: 2 * $gap_margin
+
+  &.half
+    margin-top: $gap_margin / 2
+    margin-bottom: $gap_margin / 2
+
+  &.push
+    margin-top: 0
+
+  &.pull
+    margin-bottom: 0
+
+.columns > .first
+  width: 50%
+  floast: right
+  display: inline-block
+
+.columns > .last
+  width: 50%
+  float: right
+  display: inline-block
+
+.columns:after
+  content: ""
+  display: block
+  clear: both
+
+.align-left
+  text-align: left
