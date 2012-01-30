@@ -1,3 +1,7 @@
+# Rake task to copy local files to remote server via FTP
+# required credentials.yml file, that contains keys:
+# server, username, password
+
 require "net/ftp"
 require "yaml"
 
@@ -21,11 +25,11 @@ class FTPClient
   end
 
   def delete_recursive(file_or_dir)
-    if file_or_dir == list(file_or_dir).first
+    if directory?(file_or_dir)
       puts "Removing file: #{file_or_dir}"
       ftp.delete(file_or_dir)
     else
-      list(file_or_dir).each { |f| delete_recursive(file_or_dir + "/" + f) }
+      list(file_or_dir).each { |entry| delete_recursive(file_or_dir + "/" + entry) }
       puts "Removing directory: #{file_or_dir}"
       ftp.rmdir(file_or_dir)
     end
@@ -36,7 +40,7 @@ class FTPClient
     if File.directory?(file_or_dir)
       puts "Creating directory #{remote_file_or_dir}"
       ftp.mkdir(remote_file_or_dir)
-      Dir.glob(file_or_dir + "/*").each { |e| copy_recursive(e, prefix_to_remove) }
+      Dir.glob(file_or_dir + "/*").each { |entry| copy_recursive(entry, prefix_to_remove) }
     else
       puts "Creating file #{remote_file_or_dir}"
       ftp.putbinaryfile(file_or_dir, remote_file_or_dir)
@@ -45,11 +49,16 @@ class FTPClient
 
   # file list
   def list(path = nil)
-    ftp.nlst(path).select { |f| f != "." && f != ".." }
+    # ftp.nlst(path).select { |f| f != "." && f != ".." }
+    ftp.nlst(path).select { |entry| entry !~ /^\.{1,2}$/ }
   end
 
   def credentials
     @credentials ||= YAML.load_file("credentials.yaml")
+  end
+
+  def directory?(path)
+    path == list(path).first
   end
 end
 
@@ -72,7 +81,8 @@ class Deployer
   end
 end
 
+# copy all entries in local public directory to remote www directory
 desc "deploy via ftp"
 task :deploy do
-  Deployer.run("public", "testing")
+  Deployer.run("public", "www")
 end
