@@ -4,64 +4,21 @@ body
   text-align: center
   margin: 0 auto
   width: 960px
-
-a
-  color: black
-  &:hover
-    color: gray
-
-pre
-  margin-top: 5px
-
-h1
-  font-size: 25px
-
-details
-  font-size: 12px
+  font-family: 'Ubuntu', sans-serif
 
 header
-  text-align: right
-  font-size: 15px
-  margin-bottom: 10px
-  padding-bottom: 10px
+  margin-bottom: 20px
 
-$gap_margin: 20px
+footer
+  margin-top: 20px
+  font-size: small
+  color: gray
 
-.large
-  font-size: 25px
+// General
 
-.gap
-  margin-top: $gap_margin
-  margin-bottom: $gap_margin
+.large-font
+  font-size: large
 
-  &.double
-    margin-top: 2 * $gap_margin
-    margin-bottom: 2 * $gap_margin
-
-  &.half
-    margin-top: $gap_margin / 2
-    margin-bottom: $gap_margin / 2
-
-  &.push
-    margin-top: 0
-
-  &.pull
-    margin-bottom: 0
-
-.columns > .first
-  width: 50%
-  floast: right
-  display: inline-block
-
-.columns > .last
-  width: 50%
-  float: right
-  display: inline-block
-
-.columns:after
-  content: ""
-  display: block
-  clear: both
-
-.align-left
-  text-align: left
+// Specific
+.author
+  font-size: medium

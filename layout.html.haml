@@ -5,12 +5,14 @@
     %meta{:charset => "utf-8"}
     %meta{:content => "urizen", :name => "keywords"}
     %meta{:content => "Home page", :name => "description"}
+    %link{:href => "http://fonts.googleapis.com/css?family=Ubuntu", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "screen.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}
     %link{:rel => "shortcut icon", :href => "ancient-of-days-icon.png"}
   %body
     %header
     = yield
     %footer
+      &copy; 2012
 
     :javascript
       var _gaq = _gaq || [];
