@@ -1,24 +1,48 @@
+GIT
+  remote: git://github.com/livingsocial/rake-pipeline.git
+  revision: f71caeb1406dafd6af5ab8453db8c5ac53947c92
+  specs:
+    rake-pipeline (0.6.0)
+      rake (~> 0.9.0)
+      thor
+
+GIT
+  remote: git://github.com/morgoth/rake-pipeline-web-filters.git
+  revision: 53f834b2084bab5ff3cfdb1de7434ee8f250303c
+  branch: sass-load-path-watched-files-fix
+  specs:
+    rake-pipeline-web-filters (0.6.0)
+      rack
+      rake-pipeline (~> 0.6)
+
+GIT
+  remote: git://github.com/rtomayko/tilt.git
+  revision: 9a474c5dd9c3d37ff441cfcfe65932fd795acb7a
+  branch: encodings
+  specs:
+    tilt (1.3.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
-    directory_watcher (1.4.1)
+    chunky_png (1.2.5)
+    compass (0.11.7)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    fssm (0.2.8.1)
     haml (3.1.4)
-    redis (2.2.2)
+    rack (1.4.1)
+    rake (0.9.2.2)
     sass (3.1.15)
-    slop (2.1.0)
-    stasis (0.1.18)
-      directory_watcher (~> 1.4.1)
-      redis (~> 2.2.2)
-      slop (~> 2.1.0)
-      tilt (~> 1.3.3)
-      yajl-ruby (~> 1.0.0)
-    tilt (1.3.3)
-    yajl-ruby (1.0.0)
+    thor (0.14.6)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  compass
   haml
-  sass
-  stasis
+  rake-pipeline!
+  rake-pipeline-web-filters!
+  tilt!

@@ -1,4 +1,5 @@
 .sass-cache
 .bundle
+tmp
 credentials.yaml
 public
