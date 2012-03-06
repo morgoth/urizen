@@ -7,20 +7,19 @@ GIT
       thor
 
 GIT
-  remote: git://github.com/morgoth/rake-pipeline-web-filters.git
-  revision: 53f834b2084bab5ff3cfdb1de7434ee8f250303c
-  branch: sass-load-path-watched-files-fix
-  specs:
-    rake-pipeline-web-filters (0.6.0)
-      rack
-      rake-pipeline (~> 0.6)
-
-GIT
   remote: git://github.com/rtomayko/tilt.git
   revision: 9a474c5dd9c3d37ff441cfcfe65932fd795acb7a
   branch: encodings
   specs:
     tilt (1.3.3)
+
+GIT
+  remote: git://github.com/wycats/rake-pipeline-web-filters.git
+  revision: 8733ae442fa0f10f0112c75c841e8594f42419e8
+  specs:
+    rake-pipeline-web-filters (0.6.0)
+      rack
+      rake-pipeline (~> 0.6)
 
 GEM
   remote: https://rubygems.org/

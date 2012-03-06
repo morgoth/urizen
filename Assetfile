@@ -13,7 +13,7 @@ input "app" do
 
   # Stylesheets
   match "stylesheets/application.sass" do
-    sass additional_load_paths: "app/stylesheets/partials/"
+    sass line_comments: false, additional_load_paths: "app/stylesheets/partials/"
     copy "application.css"
   end
 
