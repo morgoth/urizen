@@ -1,8 +1,27 @@
 %h1 Open source projects
 
-%ul
-  %li alexa
-  %li picasa
-  %li airbrake_handler
-  %li centrum_faktur
-  %li moneybookers
+%ul.projects
+  %li.row.gap
+    .name.column.one-quarter
+      %a{href: "https://github.com/morgoth/alexa"} alexa
+      %div.small-font.grey
+        v
+    .description.column.three-quarters
+      Ruby client for Alexa Web Information Service
+
+  %li.row.gap
+    .name.column.one-quarter
+      %a{href: "https://github.com/morgoth/picasa"} picasa
+      %div.small-font.grey
+        0.2.1
+    .description.column.three-quarters
+      Simple google picasa managment
+
+  %li.row.gap
+    .name.column.one-quarter
+      %a{href: "https://github.com/morgoth/airbrake_handler"} airbrake_handler
+      %div.small-font.grey
+        0.3.4
+    .description.column.three-quarters
+      Chef handler for sending exceptions to Airbrake
+
