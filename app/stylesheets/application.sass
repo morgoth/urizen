@@ -9,10 +9,12 @@ $default-box-shadow-blur: 5px
 @import "compass/css3/border-radius"
 @import "compass/css3/box-shadow"
 @import "compass/css3/images"
+@import "compass/utilities/lists/inline-list"
 
 @import "partials/gap"
 @import "partials/column"
 @import "partials/projects"
+@import "partials/about"
 
 body
   text-align: center
@@ -27,13 +29,26 @@ header
   padding: 10px 0
   border-bottom: 1px solid $grey
 
+nav
+  +inline-list
+  li:first-child:after
+    content: "|"
+  a
+    text-decoration: none
+
 a
-  text-decoration: none
+  color: black
+
+a:hover
+  color: $grey
 
 h1
   font-size: xx-large
 
 // General
+.align-left
+  text-align: left
+
 .small-font
   font-size: small
 
@@ -42,8 +57,3 @@ h1
 
 .grey
   color: $grey
-
-// mynameis.com
-.card
-  margin: 0 auto
-  text-align: left

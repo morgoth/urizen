@@ -10,9 +10,13 @@
     %link{href: "/ancient-icon-min.png", rel: "shortcut icon"}
   %body
     %header
-      //%h1.big-font
-      //  %a{href: "/"} Wojciech Wnętrzak
-      %h2 Ruby &amp; JavaScript development
+      %nav
+        %ul
+          %li
+            %a{href: "/"} About
+          %li
+            %a{href: "/open-source.html"} Open Source
+
     = yield
     %footer.gap.small-font.grey
       &copy; Wojciech Wnętrzak 2012
