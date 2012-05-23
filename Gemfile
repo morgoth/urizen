@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-# gem "coffee-script"
+gem "coffee-script"
 gem "haml"
 gem "compass"
 gem "tilt", git: "git://github.com/rtomayko/tilt.git", branch: "encodings"

@@ -4,6 +4,16 @@ require File.expand_path("../lib/layout_filter", __FILE__)
 output "public"
 
 input "app" do
+  # Javascripts
+  match "javascripts/**/*.coffee" do
+    coffee_script
+  end
+
+  match "javascripts/**/*.js" do
+    minispade string: true, module_id_generator: lambda { |input| input.path.sub(%r{javascripts/}, "").sub(/\.js$/, "") }
+    concat "application.js"
+  end
+
   # Views
   match "views/*.haml" do
     tilt
