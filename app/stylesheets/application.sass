@@ -14,7 +14,6 @@ $default-box-shadow-blur: 5px
 @import "partials/gap"
 @import "partials/column"
 @import "partials/projects"
-@import "partials/about"
 
 body
   text-align: center
@@ -27,14 +26,18 @@ header
   +border-bottom-radius(10px)
   +box-shadow
   padding: 10px 0
+  margin-bottom: 10px
   border-bottom: 1px solid $grey
 
 nav
   +inline-list
-  li:first-child:after
-    content: "|"
   a
     text-decoration: none
+
+.logo
+  width: 100px
+  vertical-align: middle
+  margin-right: 10px
 
 a
   color: black
