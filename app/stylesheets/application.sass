@@ -9,7 +9,6 @@ $default-box-shadow-blur: 5px
 @import "compass/css3/border-radius"
 @import "compass/css3/box-shadow"
 @import "compass/css3/images"
-@import "compass/utilities/lists/inline-list"
 
 @import "partials/gap"
 @import "partials/column"
@@ -25,14 +24,11 @@ header
   +background-image(linear-gradient(#fafafa, $grey))
   +border-bottom-radius(10px)
   +box-shadow
+  font-weight: bold
+  font-size: x-large
   padding: 10px 0
   margin-bottom: 10px
   border-bottom: 1px solid $grey
-
-nav
-  +inline-list
-  a
-    text-decoration: none
 
 .logo
   width: 100px
@@ -46,7 +42,7 @@ a:hover
   color: $grey
 
 h1
-  font-size: xx-large
+  font-size: x-large
 
 // General
 .align-left
