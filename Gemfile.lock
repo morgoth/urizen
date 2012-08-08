@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/livingsocial/rake-pipeline.git
-  revision: 543f4322fe70facee9572d29ddabf7f090dad68a
+  revision: 9008ba072c7a97f4c730e779358e8a0ad7b8d194
   specs:
     rake-pipeline (0.6.0)
       rake (~> 0.9.0)
@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: git://github.com/wycats/rake-pipeline-web-filters.git
-  revision: 81a22fb0808dfdeab8ed92d5d8c898ad198b9938
+  revision: 51915f60889fbf54fc2e81b86b594bf4c7be4ea5
   specs:
     rake-pipeline-web-filters (0.6.0)
       rack
@@ -24,7 +24,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    chunky_png (1.2.5)
+    chunky_png (1.2.6)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
