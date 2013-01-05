@@ -1,4 +1,8 @@
-# Deployment:
+## Development
+
+  bundle exec rakep server
+
+## Deployment:
 
 Generate site:
 
