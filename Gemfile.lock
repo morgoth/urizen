@@ -1,10 +1,10 @@
 GIT
   remote: git://github.com/livingsocial/rake-pipeline.git
-  revision: 50b8d77b703c96539a433ee53a680c43542aaa75
+  revision: 65b1e744defa208e313703d89f3453447cc103b2
   specs:
     rake-pipeline (0.8.0)
       json
-      rake (~> 0.9.0)
+      rake (~> 10.0.0)
       thor
 
 GIT
@@ -16,7 +16,7 @@ GIT
 
 GIT
   remote: git://github.com/wycats/rake-pipeline-web-filters.git
-  revision: 1a6dc173776b188836aa2ce2ac35b61c7f7daafe
+  revision: 31e8a1e779be4e928f510f6f4f481c58cd796800
   specs:
     rake-pipeline-web-filters (0.6.0)
       rack
@@ -25,25 +25,26 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    chunky_png (1.2.6)
+    chunky_png (1.2.8)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.4.0)
+    coffee-script-source (1.6.3)
     compass (0.12.2)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
     execjs (1.4.0)
       multi_json (~> 1.0)
-    fssm (0.2.9)
-    haml (3.1.7)
-    json (1.7.6)
-    multi_json (1.5.0)
-    rack (1.4.1)
-    rake (0.9.6)
-    sass (3.2.5)
-    thor (0.16.0)
+    fssm (0.2.10)
+    haml (4.0.3)
+      tilt
+    json (1.8.0)
+    multi_json (1.7.8)
+    rack (1.5.2)
+    rake (10.0.4)
+    sass (3.2.10)
+    thor (0.18.1)
 
 PLATFORMS
   ruby
