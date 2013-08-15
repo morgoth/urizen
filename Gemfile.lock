@@ -16,7 +16,7 @@ GIT
 
 GIT
   remote: git://github.com/wycats/rake-pipeline-web-filters.git
-  revision: 31e8a1e779be4e928f510f6f4f481c58cd796800
+  revision: 19a6a4e94c700081bbec5814f1536c2b4570979f
   specs:
     rake-pipeline-web-filters (0.6.0)
       rack
@@ -40,7 +40,7 @@ GEM
     haml (4.0.3)
       tilt
     json (1.8.0)
-    multi_json (1.7.8)
+    multi_json (1.7.9)
     rack (1.5.2)
     rake (10.0.4)
     sass (3.2.10)
