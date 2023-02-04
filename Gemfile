@@ -1,10 +1,10 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-ruby "2.2.0"
+gem 'jekyll'
 
-gem "coffee-script"
-gem "haml"
-gem "compass"
-gem "tilt", github: "rtomayko/tilt", branch: "encodings"
-gem "rake-pipeline", github: "livingsocial/rake-pipeline"
-gem "rake-pipeline-web-filters", github: "wycats/rake-pipeline-web-filters"
+group :jekyll_plugins do
+  gem 'jekyll-seo-tag'
+  gem 'jekyll-email-protect'
+end
+
+gem "webrick", "~> 1.7"

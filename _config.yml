@@ -1,0 +1,29 @@
+title: Wojciech Wnętrzak
+description: Ruby & JavaScript development
+
+baseurl: "" #name of GitHub repository
+url: "" #custom url to be used instead of GitHub repository
+email: "contact@urizen.pl"
+
+# Social media links in footer
+twitter: "morgoth85"
+linkedin: "wojciech-wnetrzak-a8403918a"
+github: "morgoth"
+
+# Markdown
+highlighter: rouge
+markdown: kramdown
+
+sass:
+  sass_dir: /assets/css/_sass
+  style: compressed
+
+include:
+  - _pages
+
+exclude:
+  - README.md
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-email-protect
