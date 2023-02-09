@@ -1,14 +1,19 @@
+# SEO tag
 title: Wojciech Wnętrzak
 description: Ruby & JavaScript development
+url: "https://urizen.pl"
+twitter:
+  username: morgoth85
+  card: summary
+social:
+  name: Wojciech Wnętrzak
+  links:
+    - https://twitter.com/morgoth85
+    - https://www.linkedin.com/in/wojciech-wnetrzak-a8403918a
+    - https://github.com/morgoth
 
-baseurl: "" #name of GitHub repository
-url: "" #custom url to be used instead of GitHub repository
 email: "contact@urizen.pl"
-
-# Social media links in footer
-twitter: "morgoth85"
-linkedin: "wojciech-wnetrzak-a8403918a"
-github: "morgoth"
+baseurl: "" #name of GitHub repository
 
 # Markdown
 highlighter: rouge
