@@ -31,7 +31,6 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
-    jekyll-email-protect (1.1.0)
     jekyll-sass-converter (3.0.0)
       sass-embedded (~> 1.54)
     jekyll-seo-tag (2.8.0)
@@ -54,7 +53,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.5)
-    rouge (4.0.1)
+    rouge (4.1.0)
     safe_yaml (1.0.5)
     sass-embedded (1.58.0-x86_64-linux-gnu)
       google-protobuf (~> 3.21)
@@ -68,7 +67,6 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-email-protect
   jekyll-seo-tag
   webrick (~> 1.7)
 

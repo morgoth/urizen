@@ -1,10 +1,9 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'jekyll'
+gem "jekyll"
 
 group :jekyll_plugins do
-  gem 'jekyll-seo-tag'
-  gem 'jekyll-email-protect'
+  gem "jekyll-seo-tag"
 end
 
 gem "webrick", "~> 1.7"
