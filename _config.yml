@@ -19,10 +19,6 @@ baseurl: "" #name of GitHub repository
 highlighter: rouge
 markdown: kramdown
 
-sass:
-  sass_dir: /assets/css/_sass
-  style: compressed
-
 include:
   - _pages
 

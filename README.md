@@ -1,3 +1,3 @@
 # Home page
 
-Powered by Jekyll & Gradfolio theme
+Powered by Jekyll
